@@ -1,0 +1,179 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>PracticeSession</groupId>
+	<artifactId>Ecubix</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Ecubix</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>23</maven.compiler.source>
+		<maven.compiler.target>23</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.10.2</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.32.0</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<!-- Used for: Working with JSON data (read/write). -->
+		<!-- It helps you easily convert Java objects to JSON (serialization)
+		and JSON back to Java objects (deserialization). -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.19.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<!-- Used for: Working with file operations easily. -->
+		<!-- It provides utility methods to read/write files, copy files, get
+		file extensions, etc., without writing too much code. -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.19.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.2</version>
+		</dependency>
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>MasterSuite1</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.5.3</version>
+							<configuration>
+								<suiteXmlFiles>
+									<!-- 
+									<file>Regression.xml</file>
+									<file>Sanity.xml</file>
+								-->
+									<file>MasterSuite1.xml</file>
+								</suiteXmlFiles>
+								<properties>
+									<property>
+										<name>suitethreadpoolsize</name>
+										<value>2</value>
+									</property>
+								</properties>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>MasterSuite2</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.5.3</version>
+							<configuration>
+								<suiteXmlFiles>
+									<!-- 
+									<file>Sanity.xml</file>
+									<file>Smoke.xml</file>
+									-->
+									<file>MasterSuite2.xml</file>
+								</suiteXmlFiles>
+								<properties>
+									<property>
+										<name>suitethreadpoolsize</name>
+										<value>2</value>
+									</property>
+								</properties>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>MasterSuite3</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.5.3</version>
+							<configuration>
+								<suiteXmlFiles>
+									<!-- 
+									<file>Regression.xml</file>
+									<file>Sanity.xml</file>
+									<file>Smoke.xml</file>
+									-->
+									<file>MasterSuite3.xml</file>
+								</suiteXmlFiles>
+								<properties>
+									<property>
+										<name>suitethreadpoolsize</name>
+										<value>2</value>
+									</property>
+								</properties>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
+
+	<!--
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.5.3</version>
+					<configuration>
+						<suiteXmlFiles>
+							<file>Regression.xml</file>
+							<file>Sanity.xml</file>
+							<file>Smoke.xml</file>
+						</suiteXmlFiles>
+						<properties>
+							<property>
+								<name>suitethreadpoolsize</name>
+								<value>3</value>
+							</property>
+						</properties>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+-->
+
+</project>

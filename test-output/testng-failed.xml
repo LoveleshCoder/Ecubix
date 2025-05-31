@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.watch.utilities.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.watch.site.contact_us.TestContactUsPage">
+        <methods>
+          <include name="testNavigationToContactUsPage"/>
+          <include name="launchWebApplication"/>
+          <include name="tearDown"/>
+          <include name="testSuccessfulFormSubmission"/>
+          <include name="testEmptyFormSubmission"/>
+        </methods>
+      </class> <!-- com.watch.site.contact_us.TestContactUsPage -->
+      <class name="com.watch.site.search_result.TestSearchResultPage">
+        <methods>
+          <include name="testSearchFunctionalityWRTNoMatchingProduct"/>
+          <include name="launchWebApplication"/>
+          <include name="testSearchFunctionalityWRTMatchingProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.watch.site.search_result.TestSearchResultPage -->
+      <class name="com.watch.site.product.TestProductAddedToCart">
+        <methods>
+          <include name="launchWebApplication"/>
+          <include name="tearDown"/>
+          <include name="testSuccessfulProductAddToCart"/>
+        </methods>
+      </class> <!-- com.watch.site.product.TestProductAddedToCart -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

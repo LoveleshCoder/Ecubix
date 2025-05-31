@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="52.795" tests="10" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/testriq_20/eclipse-workspace/Ecubix/target/test-classes:/Users/testriq_20/eclipse-workspace/Ecubix/target/classes:/Users/testriq_20/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/testriq_20/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/testriq_20/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/testriq_20/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-java/4.32.0/selenium-java-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-api/4.32.0/selenium-api-4.32.0.jar:/Users/testriq_20/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.32.0/selenium-chrome-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.32.0/selenium-chromium-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-json/4.32.0/selenium-json-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.32.0/selenium-manager-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v134/4.32.0/selenium-devtools-v134-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v135/4.32.0/selenium-devtools-v135-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.32.0/selenium-devtools-v136-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.32.0/selenium-edge-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.32.0/selenium-firefox-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-http/4.32.0/selenium-http-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.32.0/selenium-ie-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.32.0/selenium-remote-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/testriq_20/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/testriq_20/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/testriq_20/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/Users/testriq_20/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-api/1.49.0/opentelemetry-api-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-context/1.49.0/opentelemetry-context-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.49.0/opentelemetry-exporter-logging-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.49.0/opentelemetry-sdk-common-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.49.0/opentelemetry-sdk-extension-autoconfigure-spi-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.49.0/opentelemetry-sdk-extension-autoconfigure-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.49.0/opentelemetry-sdk-trace-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.49.0/opentelemetry-sdk-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.49.0/opentelemetry-sdk-metrics-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.49.0/opentelemetry-sdk-logs-1.49.0.jar:/Users/testriq_20/.m2/repository/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-os/4.32.0/selenium-os-4.32.0.jar:/Users/testriq_20/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.32.0/selenium-safari-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-support/4.32.0/selenium-support-4.32.0.jar:/Users/testriq_20/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar:/Users/testriq_20/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar:/Users/testriq_20/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar:/Users/testriq_20/.m2/repository/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar:/Users/testriq_20/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar:/Users/testriq_20/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/testriq_20/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/testriq_20/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/testriq_20/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/testriq_20/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/testriq_20/eclipse-workspace/Ecubix/target/surefire/surefirebooter-20250522112922700_3.jar /Users/testriq_20/eclipse-workspace/Ecubix/target/surefire 2025-05-22T11-29-22_654-jvmRun1 surefire-20250522112922700_1tmp surefire_0-20250522112922700_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/testriq_20/eclipse-workspace/Ecubix/target/test-classes:/Users/testriq_20/eclipse-workspace/Ecubix/target/classes:/Users/testriq_20/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/testriq_20/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/testriq_20/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/testriq_20/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-java/4.32.0/selenium-java-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-api/4.32.0/selenium-api-4.32.0.jar:/Users/testriq_20/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.32.0/selenium-chrome-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.32.0/selenium-chromium-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-json/4.32.0/selenium-json-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.32.0/selenium-manager-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v134/4.32.0/selenium-devtools-v134-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v135/4.32.0/selenium-devtools-v135-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.32.0/selenium-devtools-v136-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.32.0/selenium-edge-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.32.0/selenium-firefox-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-http/4.32.0/selenium-http-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.32.0/selenium-ie-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.32.0/selenium-remote-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/testriq_20/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/testriq_20/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/testriq_20/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/Users/testriq_20/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-api/1.49.0/opentelemetry-api-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-context/1.49.0/opentelemetry-context-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.49.0/opentelemetry-exporter-logging-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.49.0/opentelemetry-sdk-common-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.49.0/opentelemetry-sdk-extension-autoconfigure-spi-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.49.0/opentelemetry-sdk-extension-autoconfigure-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.49.0/opentelemetry-sdk-trace-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.49.0/opentelemetry-sdk-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.49.0/opentelemetry-sdk-metrics-1.49.0.jar:/Users/testriq_20/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.49.0/opentelemetry-sdk-logs-1.49.0.jar:/Users/testriq_20/.m2/repository/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-os/4.32.0/selenium-os-4.32.0.jar:/Users/testriq_20/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.32.0/selenium-safari-driver-4.32.0.jar:/Users/testriq_20/.m2/repository/org/seleniumhq/selenium/selenium-support/4.32.0/selenium-support-4.32.0.jar:/Users/testriq_20/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar:/Users/testriq_20/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar:/Users/testriq_20/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar:/Users/testriq_20/.m2/repository/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar:/Users/testriq_20/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar:/Users/testriq_20/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/testriq_20/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/testriq_20/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/testriq_20/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/testriq_20/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/testriq_20"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/testriq_20/eclipse-workspace/Ecubix"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/testriq_20/eclipse-workspace/Ecubix/target/surefire/surefirebooter-20250522112922700_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="testriq_20"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.6.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/testriq_20/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/9_/qzwv35hj1032xsnlgrz9smxm0000gn/T/"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/testriq_20/eclipse-workspace/Ecubix"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/testriq_20/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testSearchFunctionalityWRTMatchingProduct" classname="com.watch.site.search_result.TestSearchResultPage" time="2.051">
+    <system-out><![CDATA[35
+34
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchFunctionalityWRTMatchingProduct" classname="com.watch.site.search_result.TestSearchResultPage" time="2.054"/>
+  <testcase name="testSearchFunctionalityWRTNoMatchingProduct" classname="com.watch.site.search_result.TestSearchResultPage" time="1.396">
+    <system-out><![CDATA[34
+35
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchFunctionalityWRTNoMatchingProduct" classname="com.watch.site.search_result.TestSearchResultPage" time="1.711"/>
+  <testcase name="testNavigationToContactUsPage" classname="com.watch.site.contact_us.TestContactUsPage" time="0.874">
+    <failure message="expected [Contact Us] but found [CONTACT US]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Contact Us] but found [CONTACT US]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.watch.site.contact_us.TestContactUsPage.testNavigationToContactUsPage(TestContactUsPage.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></failure>
+    <system-out><![CDATA[35
+34
+]]></system-out>
+    <system-err><![CDATA[java.lang.NoSuchFieldException: driver
+	at java.base/java.lang.Class.getField(Class.java:2343)
+	at com.watch.utilities.Listener.onTestFailure(Listener.java:48)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></system-err>
+  </testcase>
+  <testcase name="testNavigationToContactUsPage" classname="com.watch.site.contact_us.TestContactUsPage" time="1.147">
+    <failure message="expected [Contact Us] but found [CONTACT US]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Contact Us] but found [CONTACT US]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.watch.site.contact_us.TestContactUsPage.testNavigationToContactUsPage(TestContactUsPage.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></failure>
+    <system-err><![CDATA[java.lang.NoSuchFieldException: driver
+	at java.base/java.lang.Class.getField(Class.java:2343)
+	at com.watch.utilities.Listener.onTestFailure(Listener.java:48)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></system-err>
+  </testcase>
+  <testcase name="testEmptyFormSubmission" classname="com.watch.site.contact_us.TestContactUsPage" time="1.196">
+    <system-out><![CDATA[35
+34
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyFormSubmission" classname="com.watch.site.contact_us.TestContactUsPage" time="1.588"/>
+  <testcase name="testSuccessfulFormSubmission" classname="com.watch.site.contact_us.TestContactUsPage" time="4.395">
+    <system-out><![CDATA[35
+34
+]]></system-out>
+  </testcase>
+  <testcase name="testSuccessfulFormSubmission" classname="com.watch.site.contact_us.TestContactUsPage" time="4.894"/>
+</testsuite>

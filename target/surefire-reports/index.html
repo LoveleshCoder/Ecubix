@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">3 suites, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Sanity_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Sanity Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Sanity_Suite" class="navigator-link ">
+                    <span>Sanity.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Sanity_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Sanity_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Sanity_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Sanity_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Sanity_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Sanity_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Sanity_Suite" class="hide-methods failed suite-Sanity_Suite"> (hide)</a> <!-- hide-methods failed suite-Sanity_Suite -->
+                      <a href="#" panel-name="suite-Sanity_Suite" class="show-methods failed suite-Sanity_Suite"> (show)</a> <!-- show-methods failed suite-Sanity_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Sanity_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Suite" title="com.watch.site.contact_us.TestContactUsPage" class="method navigator-link" hash-for-method="testNavigationToContactUsPage">testNavigationToContactUsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Sanity_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Sanity_Suite" class="hide-methods passed suite-Sanity_Suite"> (hide)</a> <!-- hide-methods passed suite-Sanity_Suite -->
+                      <a href="#" panel-name="suite-Sanity_Suite" class="show-methods passed suite-Sanity_Suite"> (show)</a> <!-- show-methods passed suite-Sanity_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Sanity_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Suite" title="com.watch.site.contact_us.TestContactUsPage" class="method navigator-link" hash-for-method="testEmptyFormSubmission">testEmptyFormSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Suite" title="com.watch.site.search_result.TestSearchResultPage" class="method navigator-link" hash-for-method="testSearchFunctionalityWRTMatchingProduct">testSearchFunctionalityWRTMatchingProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Suite" title="com.watch.site.search_result.TestSearchResultPage" class="method navigator-link" hash-for-method="testSearchFunctionalityWRTNoMatchingProduct">testSearchFunctionalityWRTNoMatchingProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Suite" title="com.watch.site.contact_us.TestContactUsPage" class="method navigator-link" hash-for-method="testSuccessfulFormSubmission">testSuccessfulFormSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Sanity_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Smoke_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Smoke Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Smoke_Suite" class="navigator-link ">
+                    <span>Smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Smoke_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Smoke_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Smoke_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Smoke_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Smoke_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Smoke_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_Suite" class="hide-methods failed suite-Smoke_Suite"> (hide)</a> <!-- hide-methods failed suite-Smoke_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Suite" class="show-methods failed suite-Smoke_Suite"> (show)</a> <!-- show-methods failed suite-Smoke_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="com.watch.site.contact_us.TestContactUsPage" class="method navigator-link" hash-for-method="testNavigationToContactUsPage">testNavigationToContactUsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Smoke_Suite" class="hide-methods passed suite-Smoke_Suite"> (hide)</a> <!-- hide-methods passed suite-Smoke_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Suite" class="show-methods passed suite-Smoke_Suite"> (show)</a> <!-- show-methods passed suite-Smoke_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Smoke_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="com.watch.site.contact_us.TestContactUsPage" class="method navigator-link" hash-for-method="testEmptyFormSubmission">testEmptyFormSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="com.watch.site.search_result.TestSearchResultPage" class="method navigator-link" hash-for-method="testSearchFunctionalityWRTMatchingProduct">testSearchFunctionalityWRTMatchingProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="com.watch.site.search_result.TestSearchResultPage" class="method navigator-link" hash-for-method="testSearchFunctionalityWRTNoMatchingProduct">testSearchFunctionalityWRTNoMatchingProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="com.watch.site.contact_us.TestContactUsPage" class="method navigator-link" hash-for-method="testSuccessfulFormSubmission">testSuccessfulFormSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Smoke_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Master_Suite_2" class="panel Master_Suite_2">
+        </div> <!-- panel Master_Suite_2 -->
+        <div panel-name="suite-Sanity_Suite" class="panel Sanity_Suite">
+          <div class="suite-Sanity_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.watch.site.contact_us.TestContactUsPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigationToContactUsPage">
+                  </a> <!-- testNavigationToContactUsPage -->
+                  <span class="method-name">testNavigationToContactUsPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Contact Us] but found [CONTACT US]
+	at com.watch.site.contact_us.TestContactUsPage.testNavigationToContactUsPage(TestContactUsPage.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test the navigation to Contact Us page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sanity_Suite-class-failed -->
+          <div class="suite-Sanity_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.watch.site.search_result.TestSearchResultPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityWRTMatchingProduct">
+                  </a> <!-- testSearchFunctionalityWRTMatchingProduct -->
+                  <span class="method-name">testSearchFunctionalityWRTMatchingProduct</span>
+                  <em>
+(Verify that the search functionality returns relevant results for valid keywords)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityWRTNoMatchingProduct">
+                  </a> <!-- testSearchFunctionalityWRTNoMatchingProduct -->
+                  <span class="method-name">testSearchFunctionalityWRTNoMatchingProduct</span>
+                  <em>
+(Verify that search results shows no results when there are no matching products)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sanity_Suite-class-passed -->
+          <div class="suite-Sanity_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.watch.site.contact_us.TestContactUsPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyFormSubmission">
+                  </a> <!-- testEmptyFormSubmission -->
+                  <span class="method-name">testEmptyFormSubmission</span>
+                  <em>
+(Test that empty form can not be submitted)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulFormSubmission">
+                  </a> <!-- testSuccessfulFormSubmission -->
+                  <span class="method-name">testSuccessfulFormSubmission</span>
+                  <em>
+(Test that Contact Us form submission sent a message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sanity_Suite-class-passed -->
+        </div> <!-- panel Sanity_Suite -->
+        <div panel-name="suite-Smoke_Suite" class="panel Smoke_Suite">
+          <div class="suite-Smoke_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.watch.site.contact_us.TestContactUsPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigationToContactUsPage">
+                  </a> <!-- testNavigationToContactUsPage -->
+                  <span class="method-name">testNavigationToContactUsPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Contact Us] but found [CONTACT US]
+	at com.watch.site.contact_us.TestContactUsPage.testNavigationToContactUsPage(TestContactUsPage.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test the navigation to Contact Us page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-failed -->
+          <div class="suite-Smoke_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.watch.site.search_result.TestSearchResultPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityWRTMatchingProduct">
+                  </a> <!-- testSearchFunctionalityWRTMatchingProduct -->
+                  <span class="method-name">testSearchFunctionalityWRTMatchingProduct</span>
+                  <em>
+(Verify that the search functionality returns relevant results for valid keywords)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityWRTNoMatchingProduct">
+                  </a> <!-- testSearchFunctionalityWRTNoMatchingProduct -->
+                  <span class="method-name">testSearchFunctionalityWRTNoMatchingProduct</span>
+                  <em>
+(Verify that search results shows no results when there are no matching products)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-passed -->
+          <div class="suite-Smoke_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.watch.site.contact_us.TestContactUsPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyFormSubmission">
+                  </a> <!-- testEmptyFormSubmission -->
+                  <span class="method-name">testEmptyFormSubmission</span>
+                  <em>
+(Test that empty form can not be submitted)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulFormSubmission">
+                  </a> <!-- testSuccessfulFormSubmission -->
+                  <span class="method-name">testSuccessfulFormSubmission</span>
+                  <em>
+(Test that Contact Us form submission sent a message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-passed -->
+        </div> <!-- panel Smoke_Suite -->
+        <div panel-name="test-xml-Master_Suite_2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/testriq_20/eclipse-workspace/Ecubix/MasterSuite3.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Master Suite 2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.watch.utilities.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;Sanity.xml&quot;/&gt;
+    &lt;suite-file path=&quot;Smoke.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- Master Suite 2 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/testriq_20/eclipse-workspace/Ecubix/Sanity.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Sanity Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Search Page Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.watch.site.search_result.TestSearchResultPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search Page Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Contact Us Page Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.watch.site.contact_us.TestContactUsPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Contact Us Page Test --&gt;
+&lt;/suite&gt; &lt;!-- Sanity Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/testriq_20/eclipse-workspace/Ecubix/Smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Smoke Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Search Result Page Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.watch.site.search_result.TestSearchResultPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search Result Page Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Contact Us Page Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.watch.site.contact_us.TestContactUsPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Contact Us Page Test --&gt;
+&lt;/suite&gt; &lt;!-- Smoke Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Master_Suite_2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Master Suite 2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Search Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Contact Us Page Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Search Result Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Contact Us Page Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Master_Suite_2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Master Suite 2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Master_Suite_2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Master Suite 2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Master_Suite_2');
+function tableData_Master_Suite_2() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['Master_Suite_2']= { tableData: data, tableDiv: 'times-div-Master_Suite_2'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Master_Suite_2">
+              </div> <!-- times-div-Master_Suite_2 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Sanity_Suite');
+function tableData_Sanity_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSuccessfulFormSubmission')
+data.setCell(0, 2, 'com.watch.site.contact_us.TestContactUsPage')
+data.setCell(0, 3, 4894);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSearchFunctionalityWRTMatchingProduct')
+data.setCell(1, 2, 'com.watch.site.search_result.TestSearchResultPage')
+data.setCell(1, 3, 2054);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testEmptyFormSubmission')
+data.setCell(2, 2, 'com.watch.site.contact_us.TestContactUsPage')
+data.setCell(2, 3, 1589);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSearchFunctionalityWRTNoMatchingProduct')
+data.setCell(3, 2, 'com.watch.site.search_result.TestSearchResultPage')
+data.setCell(3, 3, 1451);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testNavigationToContactUsPage')
+data.setCell(4, 2, 'com.watch.site.contact_us.TestContactUsPage')
+data.setCell(4, 3, 930);
+window.suiteTableData['Sanity_Suite']= { tableData: data, tableDiv: 'times-div-Sanity_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-Sanity_Suite">
+              </div> <!-- times-div-Sanity_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Smoke_Suite');
+function tableData_Smoke_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSuccessfulFormSubmission')
+data.setCell(0, 2, 'com.watch.site.contact_us.TestContactUsPage')
+data.setCell(0, 3, 5185);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSearchFunctionalityWRTMatchingProduct')
+data.setCell(1, 2, 'com.watch.site.search_result.TestSearchResultPage')
+data.setCell(1, 3, 2143);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testEmptyFormSubmission')
+data.setCell(2, 2, 'com.watch.site.contact_us.TestContactUsPage')
+data.setCell(2, 3, 1763);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSearchFunctionalityWRTNoMatchingProduct')
+data.setCell(3, 2, 'com.watch.site.search_result.TestSearchResultPage')
+data.setCell(3, 3, 1711);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testNavigationToContactUsPage')
+data.setCell(4, 2, 'com.watch.site.contact_us.TestContactUsPage')
+data.setCell(4, 3, 1226);
+window.suiteTableData['Smoke_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-Smoke_Suite">
+              </div> <!-- times-div-Smoke_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Master_Suite_2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Master Suite 2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Master_Suite_2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Master_Suite_2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.watch.site.contact_us.TestContactUsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">cleanData</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.watch.site.search_result.TestSearchResultPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityWRTMatchingProduct</span>
+                <span class="method-start">8494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10548 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">10633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityWRTNoMatchingProduct</span>
+                <span class="method-start">15475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16926 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.watch.site.contact_us.TestContactUsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">22173 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testNavigationToContactUsPage</span>
+                <span class="method-start">28437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29585 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">29663 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyFormSubmission</span>
+                <span class="method-start">34133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">35808 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulFormSubmission</span>
+                <span class="method-start">42456 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">47350 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.watch.site.contact_us.TestContactUsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">cleanData</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.watch.site.search_result.TestSearchResultPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityWRTMatchingProduct</span>
+                <span class="method-start">8401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">10630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityWRTNoMatchingProduct</span>
+                <span class="method-start">15529 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17241 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.watch.site.contact_us.TestContactUsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">22325 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testNavigationToContactUsPage</span>
+                <span class="method-start">27806 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29312 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">29392 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyFormSubmission</span>
+                <span class="method-start">33567 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35330 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchWebApplication</span>
+                <span class="method-start">35408 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulFormSubmission</span>
+                <span class="method-start">41666 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46852 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

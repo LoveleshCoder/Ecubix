@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-22T11:30:15 IST" name="Master Suite 2" finished-at="2025-05-22T11:30:15 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Master Suite 2 -->
+  <suite started-at="2025-05-22T11:29:23 IST" name="Sanity Suite" finished-at="2025-05-22T11:30:10 IST" duration-ms="47420">
+    <groups>
+    </groups>
+    <test started-at="2025-05-22T11:29:23 IST" name="Search Page Test" finished-at="2025-05-22T11:29:40 IST" duration-ms="16993">
+      <class name="com.watch.site.search_result.TestSearchResultPage">
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.search_result.TestSearchResultPage@6b695b06]" started-at="2025-05-22T11:29:23 IST" name="launchWebApplication" finished-at="2025-05-22T11:29:31 IST" duration-ms="8472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testSearchFunctionalityWRTMatchingProduct()[pri:1, instance:com.watch.site.search_result.TestSearchResultPage@6b695b06]" started-at="2025-05-22T11:29:31 IST" name="testSearchFunctionalityWRTMatchingProduct" description="Verify that the search functionality returns relevant results for valid keywords" finished-at="2025-05-22T11:29:33 IST" duration-ms="2054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityWRTMatchingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.search_result.TestSearchResultPage@6b695b06]" started-at="2025-05-22T11:29:33 IST" name="tearDown" finished-at="2025-05-22T11:29:33 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.search_result.TestSearchResultPage@6b695b06]" started-at="2025-05-22T11:29:33 IST" name="launchWebApplication" finished-at="2025-05-22T11:29:38 IST" duration-ms="4842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testSearchFunctionalityWRTNoMatchingProduct()[pri:2, instance:com.watch.site.search_result.TestSearchResultPage@6b695b06]" started-at="2025-05-22T11:29:38 IST" name="testSearchFunctionalityWRTNoMatchingProduct" description="Verify that search results shows no results when there are no matching products" finished-at="2025-05-22T11:29:40 IST" duration-ms="1451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityWRTNoMatchingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.search_result.TestSearchResultPage@6b695b06]" started-at="2025-05-22T11:29:40 IST" name="tearDown" finished-at="2025-05-22T11:29:40 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.watch.site.search_result.TestSearchResultPage -->
+    </test> <!-- Search Page Test -->
+    <test started-at="2025-05-22T11:29:45 IST" name="Contact Us Page Test" finished-at="2025-05-22T11:30:10 IST" duration-ms="25259">
+      <class name="com.watch.site.contact_us.TestContactUsPage">
+        <test-method is-config="true" signature="cleanData()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:29:23 IST" name="cleanData" finished-at="2025-05-22T11:29:23 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanData -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:29:45 IST" name="launchWebApplication" finished-at="2025-05-22T11:29:51 IST" duration-ms="6264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testNavigationToContactUsPage()[pri:1, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:29:51 IST" name="testNavigationToContactUsPage" description="Test the navigation to Contact Us page" finished-at="2025-05-22T11:29:52 IST" duration-ms="930" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Contact Us] but found [CONTACT US]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Contact Us] but found [CONTACT US]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.watch.site.contact_us.TestContactUsPage.testNavigationToContactUsPage(TestContactUsPage.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationToContactUsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:29:52 IST" name="tearDown" finished-at="2025-05-22T11:29:52 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:29:52 IST" name="launchWebApplication" finished-at="2025-05-22T11:29:57 IST" duration-ms="4470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testEmptyFormSubmission()[pri:2, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:29:57 IST" name="testEmptyFormSubmission" description="Test that empty form can not be submitted" finished-at="2025-05-22T11:29:58 IST" duration-ms="1589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFormSubmission -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:29:58 IST" name="tearDown" finished-at="2025-05-22T11:29:58 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:29:58 IST" name="launchWebApplication" finished-at="2025-05-22T11:30:05 IST" duration-ms="6648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testSuccessfulFormSubmission()[pri:3, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:30:05 IST" name="testSuccessfulFormSubmission" description="Test that Contact Us form submission sent a message" finished-at="2025-05-22T11:30:10 IST" duration-ms="4894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulFormSubmission -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@5a5a729f]" started-at="2025-05-22T11:30:10 IST" name="tearDown" finished-at="2025-05-22T11:30:10 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.watch.site.contact_us.TestContactUsPage -->
+    </test> <!-- Contact Us Page Test -->
+  </suite> <!-- Sanity Suite -->
+  <suite started-at="2025-05-22T11:29:23 IST" name="Smoke Suite" finished-at="2025-05-22T11:30:10 IST" duration-ms="46921">
+    <groups>
+    </groups>
+    <test started-at="2025-05-22T11:29:23 IST" name="Search Result Page Test" finished-at="2025-05-22T11:29:40 IST" duration-ms="17307">
+      <class name="com.watch.site.search_result.TestSearchResultPage">
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.search_result.TestSearchResultPage@16150369]" started-at="2025-05-22T11:29:23 IST" name="launchWebApplication" finished-at="2025-05-22T11:29:31 IST" duration-ms="8380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testSearchFunctionalityWRTMatchingProduct()[pri:1, instance:com.watch.site.search_result.TestSearchResultPage@16150369]" started-at="2025-05-22T11:29:31 IST" name="testSearchFunctionalityWRTMatchingProduct" description="Verify that the search functionality returns relevant results for valid keywords" finished-at="2025-05-22T11:29:33 IST" duration-ms="2143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityWRTMatchingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.search_result.TestSearchResultPage@16150369]" started-at="2025-05-22T11:29:33 IST" name="tearDown" finished-at="2025-05-22T11:29:33 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.search_result.TestSearchResultPage@16150369]" started-at="2025-05-22T11:29:33 IST" name="launchWebApplication" finished-at="2025-05-22T11:29:38 IST" duration-ms="4899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testSearchFunctionalityWRTNoMatchingProduct()[pri:2, instance:com.watch.site.search_result.TestSearchResultPage@16150369]" started-at="2025-05-22T11:29:38 IST" name="testSearchFunctionalityWRTNoMatchingProduct" description="Verify that search results shows no results when there are no matching products" finished-at="2025-05-22T11:29:40 IST" duration-ms="1711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityWRTNoMatchingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.search_result.TestSearchResultPage@16150369]" started-at="2025-05-22T11:29:40 IST" name="tearDown" finished-at="2025-05-22T11:29:40 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.watch.site.search_result.TestSearchResultPage -->
+    </test> <!-- Search Result Page Test -->
+    <test started-at="2025-05-22T11:29:45 IST" name="Contact Us Page Test" finished-at="2025-05-22T11:30:10 IST" duration-ms="24607">
+      <class name="com.watch.site.contact_us.TestContactUsPage">
+        <test-method is-config="true" signature="cleanData()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:29:23 IST" name="cleanData" finished-at="2025-05-22T11:29:23 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanData -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:29:45 IST" name="launchWebApplication" finished-at="2025-05-22T11:29:50 IST" duration-ms="5481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testNavigationToContactUsPage()[pri:1, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:29:50 IST" name="testNavigationToContactUsPage" description="Test the navigation to Contact Us page" finished-at="2025-05-22T11:29:52 IST" duration-ms="1226" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Contact Us] but found [CONTACT US]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Contact Us] but found [CONTACT US]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.watch.site.contact_us.TestContactUsPage.testNavigationToContactUsPage(TestContactUsPage.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationToContactUsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:29:52 IST" name="tearDown" finished-at="2025-05-22T11:29:52 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:29:52 IST" name="launchWebApplication" finished-at="2025-05-22T11:29:56 IST" duration-ms="4175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testEmptyFormSubmission()[pri:2, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:29:56 IST" name="testEmptyFormSubmission" description="Test that empty form can not be submitted" finished-at="2025-05-22T11:29:58 IST" duration-ms="1763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFormSubmission -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:29:58 IST" name="tearDown" finished-at="2025-05-22T11:29:58 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWebApplication()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:29:58 IST" name="launchWebApplication" finished-at="2025-05-22T11:30:04 IST" duration-ms="6258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebApplication -->
+        <test-method signature="testSuccessfulFormSubmission()[pri:3, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:30:04 IST" name="testSuccessfulFormSubmission" description="Test that Contact Us form submission sent a message" finished-at="2025-05-22T11:30:09 IST" duration-ms="5185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulFormSubmission -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.watch.site.contact_us.TestContactUsPage@3932c79a]" started-at="2025-05-22T11:30:09 IST" name="tearDown" finished-at="2025-05-22T11:30:10 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.watch.site.contact_us.TestContactUsPage -->
+    </test> <!-- Contact Us Page Test -->
+  </suite> <!-- Smoke Suite -->
+</testng-results>

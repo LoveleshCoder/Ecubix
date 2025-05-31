@@ -1,0 +1,104 @@
+{
+	"home_page": {
+		"search_field": {
+			"type": "xpath",
+			"value": "//input[@class='search-input']"
+		},
+		"seach_button": {
+			"type": "css",
+			"value": "button[class='button-search']"
+		},
+		"for_her": {
+			"type": "linkText",
+			"value": "For her"
+		},
+		"contact_us": {
+			"type": "linkText",
+			"value": "Contact Us"
+		}
+	},
+	"search_page": {
+		"page_title": {
+			"type": "css",
+			"value": ".main-content h1"
+		},
+		"product_names": {
+			"type": "xpath",
+			"value": "//div[@class='name']//span"
+		},
+		"product": {
+			"type": "xpath",
+			"value": "//div[@class='name']//h2"
+		},
+		"add_to_basket": {
+			"type": "xpath",
+			"value": "//div[@class='buyButton']"
+		},
+		"no_product": {
+			"type": "xpath",
+			"value": "//div[@class='no-found']"
+		}
+	},
+	"cart_popUp": {
+		"pop_up": {
+			"type": "css",
+			"value": ".pop-up-content .cart-page"
+		},
+		"goTo_cart": {
+			"type": "css",
+			"value": ".cart-page .right-buttons"
+		}
+	},
+	"cart_page": {
+		"page": {
+			"type": "css",
+			"value": ".main-content .cart-page"
+		},
+		"product_name": {
+			"type": "xpath",
+			"value": "//div[@class='name']//a"
+		}
+	},
+	"contactUs_page": {
+		"page_title": {
+			"type": "css",
+			"value": ".main-content h1"
+		},
+		"TandC_toggle": {
+			"type": "css",
+			"value": ".bootstrap-switch-id-contact-terms"
+		},
+		"continue_btn": {
+			"type": "css",
+			"value": ".contact-info.form-inputs button"
+		},
+		"name": {
+			"type": "id",
+			"value": "contact-name"
+		},
+		"email": {
+			"type": "id",
+			"value": "contact-email_address"
+		},
+		"enquiry": {
+			"type": "id",
+			"value": "contact-content"
+		},
+		"error_name": {
+			"type": "xpath",
+			"value": "//input[@id='contact-name']/following-sibling::div/div[@class='required-message']"
+		},
+		"error_email": {
+			"type": "xpath",
+			"value": "//input[@id='contact-email_address']/following-sibling::div/div[@class='required-message']"
+		},
+		"error_enquiry": {
+			"type": "xpath",
+			"value": "//textarea[@id='contact-content']/following-sibling::div/div[@class='required-message']"
+		},
+		"message": {
+			"type":"css",
+			"value":"div[data-name*='ContactForm'] div"
+		}
+	}
+}
