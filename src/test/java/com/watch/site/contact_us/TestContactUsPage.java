@@ -17,7 +17,7 @@ public class TestContactUsPage extends DriverManagementCore {
 		WebDriver driver = getDriver();
 		HomePage homepage = new HomePage(driver);
 		ContactUsPage contactUsPage = homepage.goToContactUsPage();
-		Assert.assertEquals(contactUsPage.getPageTitle(), "Contact Us");
+		Assert.assertEquals(contactUsPage.getPageTitle(), "CONTACT US");
 
 	}
 
